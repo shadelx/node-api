@@ -1,8 +1,12 @@
 # Node api
 
-This is a simple node api with auth and persmissions
+A simple REST API with nodejs
+## code
+### `npm install`
+### `npm run dev`
 
-to run this app use
-
-```npm install```
-```npm run dev```
+## dependencies
+* Express JS
+* Sequelize
+* JSON Web token
+* Sqlite3
