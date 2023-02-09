@@ -29,8 +29,8 @@ async function loginUser(req, res) {
 
 async function signupUser(req, res) {
     const { body } = req;
-    const user = await sequelize.models.users.findOne({
-        email: body.email
+    let user = await sequelize.models.users.findOne({
+        where:{email: body.email}
     })
 
     if(user){ return res.status(400).json({message: "this email is already register"})}
@@ -42,7 +42,7 @@ async function signupUser(req, res) {
         type: 'client',
     })
 
-    await user.save()
+    // await user.save()
     return res.json({message: 'your account was created successfully'})
     
 }
