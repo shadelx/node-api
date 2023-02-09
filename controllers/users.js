@@ -1,5 +1,5 @@
 const express = require('express')
-const sequelize = require('../config/db')
+const sequelize = require('../db')
 
 async function readUsers(req, res) {
     // find all the users
