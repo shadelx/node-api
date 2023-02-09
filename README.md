@@ -10,3 +10,7 @@ A simple REST API with nodejs
 * Sequelize
 * JSON Web token
 * Sqlite3
+
+## middlewares
+* authenticate
+* permission
