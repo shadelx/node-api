@@ -1,16 +1,39 @@
-# Node api
+# Todo API 2
 
-A simple REST API with nodejs
-## code
-### `npm install`
-### `npm run dev`
+This is a REST API using Node.js abd SQL with authentication functionality using JWT token
 
-## dependencies
+## Installation
+For this project we user npm package manager
+
+```
+ npm install
+
+ npm run dev
+```
+
+You will need to created an .env file with required enviorment variables
+
+TOKEN_SECRET = use node to generate token secret (
+    ```
+        require('crypto').randomBytes(64).toString('hex')
+    ```
+)
+## Dependencies
 * Express JS
 * Sequelize
 * JSON Web token
 * Sqlite3
 
-## middlewares
-* authenticate
+## Server 
+
+### Middlewares
+
+* authentication
 * permission
+
+### Routes
+
+* /api/users (CRUD)
+* /api/pets (CRUD)
+* /api/auth/login
+* /api/auth/signup

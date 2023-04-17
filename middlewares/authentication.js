@@ -1,7 +1,7 @@
 // authetication.js
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
-const sequelize = require('../config/db')
+const sequelize = require('../db')
 
 dotenv.config();
 
