@@ -1,6 +1,6 @@
 # Todo API 2
 
-This is a REST API using Node.js abd SQL with authentication functionality using JWT token
+This is a REST API using Node.js and SQL with authentication functionality using JWT token
 
 ## Installation
 For this project we user npm package manager
